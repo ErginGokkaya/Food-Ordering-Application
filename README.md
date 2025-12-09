@@ -1,5 +1,5 @@
 # Food-Ordering-Application
-A scalable Spring Boot based food ordering service implementing DDD, Clean Architecture, SAGA, CQRS, Outbox, and Kafka.
+A scalable Spring Boot based food ordering service implementing DDD, Clean Architecture, SAGA, CQRS, Outbox, and Kafka. I followed a [course](https://www.udemy.com/course/microservices-clean-architecture-ddd-saga-outbox-kafka-kubernetes/) on udemy for this project.
 
 ![General Diagram of the Application](./images/FoodOrderingApplication.png)
 
@@ -15,6 +15,11 @@ Clean Architecture is used with Hexagonal Architecture interchangebly. Compariso
 
 ## 1. Order Service
 
-Order service is designed by tactical domain driven development. Aggregates, value objects and event and the hierarchy is depicted in the figure:
+Order service is designed by tactical domain driven development. Aggregates, value objects and event and the hierarchy is depicted in the figure from course:
 
 ![Order Service DDD](./images/order-service-domain-logic-oncourse.png)
+
+### Order States
+Order states are determined as {*PENDING*, *PAID*, *APPROVED*, *CANCELLING*, *CANCELLED*}. The state changes can be showed in the figure below from course:
+
+![Order State Changes](./images/order-state-transitions.png)
