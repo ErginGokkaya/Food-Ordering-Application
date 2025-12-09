@@ -14,3 +14,7 @@ Clean Architecture is used with Hexagonal Architecture interchangebly. Compariso
 ![Comparison of the Architecture](./images/Layered_vs_Clean.png)
 
 ## 1. Order Service
+
+Order service is designed by tactical domain driven development. Aggregates, value objects and event and the hierarchy is depicted in the figure:
+
+![Order Service DDD](./images/order-service-domain-logic-oncourse.png)
